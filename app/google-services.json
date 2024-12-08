@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "704041596135",
+    "firebase_url": "https://mytiktok-62598.firebaseio.com",
+    "project_id": "mytiktok-62598",
+    "storage_bucket": "mytiktok-62598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704041596135:android:6ae1984dc408b721",
+        "android_client_info": {
+          "package_name": "com.hktrends.pkpipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704041596135-m9goi3saht99s416tj33packjsgma26e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDo_msBop2w_vn2nobtamMfsL8ogs43GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704041596135-m9goi3saht99s416tj33packjsgma26e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704041596135:android:37698370652ff2c5",
+        "android_client_info": {
+          "package_name": "com.photex.tiktok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704041596135-1jkc087vbjbq13k8t9k7bgdjvv9l22at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.photex.tiktok",
+            "certificate_hash": "6ea6bd413d212578aad4d79a267f35feb839a74c"
+          }
+        },
+        {
+          "client_id": "704041596135-ba3msmgg3shciviqdqt85gi285nnlgqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.photex.tiktok",
+            "certificate_hash": "15d31bfac675202f4619317b0a0679cfde863060"
+          }
+        },
+        {
+          "client_id": "704041596135-m9goi3saht99s416tj33packjsgma26e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDo_msBop2w_vn2nobtamMfsL8ogs43GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704041596135-m9goi3saht99s416tj33packjsgma26e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

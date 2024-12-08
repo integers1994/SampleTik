@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- android:icon="@drawable/videohelp_icon" -->
+
+
+    <!-- <item -->
+    <!-- android:id="@+id/help_down" -->
+    <!-- android:orderInCategory="11111" -->
+    <!-- android:showAsAction="always" -->
+    <!-- android:title="@null"/> -->
+    <!--<item
+        android:actionViewClass="com.photex.util.SeparatorView"
+        android:orderInCategory="11111"
+        android:showAsAction="always"
+        android:title="@null"/>-->
+    <!-- android:icon="@drawable/help_icon" -->
+    <!-- android:icon="@drawable/btncropdone" -->
+    <item
+        android:id="@+id/doncroplib"
+        android:icon="@drawable/done_btn_icon"
+        android:orderInCategory="11111"
+        android:showAsAction="always"
+        android:title="OK"/>
+
+</menu>

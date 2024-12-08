@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".activities.MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <im.ene.toro.widget.Container
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/player_progress_indicator"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/bottom_btn_layout"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottomMenuColor"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="@dimen/bottom_bar_icon_size"
+            android:layout_height="@dimen/bottom_bar_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:src="@mipmap/ic_home_main" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/bottom_bar_icon_size"
+            android:layout_height="@dimen/bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+
+            android:src="@drawable/search_btn_icon" />
+
+        <ImageView
+
+            android:onClick="onClick"
+            android:id="@+id/img_create_video"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_create_video" />
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="@dimen/bottom_bar_icon_size"
+            android:layout_height="@dimen/bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:src="@drawable/notification_btn_icon" />
+
+        <ImageView
+            android:padding="6dp"
+
+            android:onClick="onClick"
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/bottom_bar_icon_size"
+            android:layout_height="@dimen/bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_profile_main" />
+    </LinearLayout>
+
+    <!-- include bottom sheet -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/share_bottom_sheet" />
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/post_loading_indicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallZigZagIndicator" />
+
+</RelativeLayout>

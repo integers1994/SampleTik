@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="bottom_menu">64dp</dimen>
+    <dimen name="bottom_bar_icon_size">42dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--pkpipe dimentions-->
+    <dimen name="default_elevation">8dp</dimen>
+    <dimen name="comment_avatar_size">45dp</dimen>
+    <dimen name="comment_pic_size">45dp</dimen>
+    <dimen name="feeds_btn_size">36dp</dimen>
+    <dimen name="feeds_profile_pic_size">52dp</dimen>
+    <dimen name="profile_picture_size">104dp</dimen>
+    <dimen name="edit_profile_picture_size">36dp</dimen>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewTiktok"
+        tools:targetApi="31">
+
+
+        <service
+            android:name=".services.UploadVideoSecondService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activities.VideoPreviewExoActivity" />
+        <activity android:name=".gallery.VideoTrimmerActivity" />
+        <activity
+            android:name=".activities.SignInActivity"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MyTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <!--
+    <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/dynamic_link_domain"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/dynamic_link_domain"
+                    android:scheme="https" />
+            </intent-filter>
+        -->
+        <activity
+            android:name=".activities.VideoCreateActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.VideoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.VideoUploadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.ServerAudiosActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.CommentsActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.CommentsReplyActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.ProfileAcitvity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.FollowingAcitvity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.FansAcitvity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.ProfileVideosActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.ProfileUpdateAcitvity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.ProfilePictureUploadActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".cgcrop.CropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.MyAudiosActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.AudioTrimmerActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".activities.VideoUploadSecondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+
+        <service android:name=".services.SaveVideoService" />
+        <service android:name=".services.UploadVideoService" />
+        <service
+            android:name=".services.UploadProfilePictureService"
+            android:enabled="true"
+            android:exported="true" /> <!-- [START firebase_service] -->
+        <service
+            android:name=".registration.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [START firebase_service] -->
+        <service
+            android:name=".registration.RegistrationIntentService"
+            android:exported="false" /> <!-- [END instanceId_listener] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" /> <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" /> <!-- [END fcm_default_channel] -->
+        <!-- disable auto genereation of FCM Token -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.photex.tiktok.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_path" />
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

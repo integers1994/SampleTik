@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3a5ba2</color>
+    <color name="colorPrimaryDark">#3a5ba2</color>
+    <color name="colorPrimaryLight">#643a5ba2</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="gray">#757575</color>
+    <color name="lightGray">#32757575</color>
+    <color name="lightGray1">#4b757575</color>
+    <color name="bottomMenuColor">#64000000</color>
+    <color name="blue">#1976d2</color>
+    <color name="black_80">#80000000</color>
+    <color name="divider">#BDBDBD</color>
+
+
+    <color name="dash_color">#ccc</color>
+    <color name="border_color">#ccc</color>
+    <color name="background_color">#2f3031</color>
+
+    <!-- audio trimmer colors-->
+    <color name="waveform_selected">#33b5e5</color>
+    <color name="waveform_unselected">#195a72</color>
+    <color name="waveform_unselected_bkgnd_overlay">#0a242d</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+
+
+</resources>

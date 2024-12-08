@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "29102386455",
+    "firebase_url": "https://my-ticktok.firebaseio.com",
+    "project_id": "my-ticktok",
+    "storage_bucket": "my-ticktok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29102386455:android:37698370652ff2c5",
+        "android_client_info": {
+          "package_name": "com.photex.tiktok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29102386455-7ufaotcg2g2oa9gh4dtekf3gcuqvlj94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrkEGouoA27wV8Er6qALTQzVi8jmw4LIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29102386455-7ufaotcg2g2oa9gh4dtekf3gcuqvlj94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

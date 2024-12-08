@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="30dip"
+        android:background="@android:color/transparent" />
+
+
+    <com.photex.tiktok.cgcrop.RotateView
+        android:id="@+id/rotate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="55dip"
+        android:background="@android:color/transparent" />
+
+
+    <TextView
+        android:id="@+id/zoomInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seek_bar"
+        android:maxLines="2"
+        android:padding="8dp"
+        android:text="@string/zoom_in_or_zoom_out_your_picture_for_fine_croping"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#202020">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_flip_90"
+                android:layout_width="65dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/btncroprotate" />
+
+            <ImageView
+                android:layout_width="5dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_flip_moriior"
+                android:layout_width="65dip"
+                android:layout_height="50dip"
+                android:background="@drawable/btncropflip" />
+
+            <ImageView
+                android:layout_width="5dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="65dip"
+                android:layout_height="50dip"
+                android:background="@drawable/btncropreset" />
+
+            <ImageView
+                android:layout_width="5dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_invalide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_origin"
+                android:layout_width="65dip"
+                android:layout_height="50dip"
+                android:background="@drawable/btncropsqure" />
+
+            <Button
+                android:id="@+id/btn_free"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="free"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:1"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:4"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:3"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_9_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:16"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_16_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:9"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/crop"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="5dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/img_done"
+                android:layout_width="55dip"
+                android:layout_height="50dip"
+                android:background="@drawable/btncropdone"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/freetview" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_alignParentTop="true" /> -->
+
+</RelativeLayout>
